@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="content-wrapper">
+  <!--  <div class="page-header">
+    <h3 class="page-title"> Typography </h3>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Typography</li>
+      </ol>
+    </nav>
+  </div>  -->
+<br><br><br>
+  <div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+
+      <div class="card">
+      <a href="/trainerunsolvedissue/" style="text-decoration:none;">
+        <div class="card-body">
+
+          <h2 class="card-title">Unsolved Issue &nbsp&nbsp&nbsp&nbsp
+          <i class="mdi mdi-group text-success" style="font-size:25px; "></i>
+          </h2>
+        </div>
+      </a>
+      </div>
+      
+  </div>
+
+    <div class="col-md-6 grid-margin stretch-card">
+      <div class="card">
+          <a href="/trainersolvedissue/" style="text-decoration:none";>  
+          <div class="card-body">
+              <h2 class="card-title">Solved Issue &nbsp&nbsp&nbsp&nbsp
+                <i class="mdi mdi-google-circles-group text-success" style="font-size:25px; "></i>
+
+              </h2>
+              
+              </div>
+          </a>
+          </div>
+          
+      </div>
+    
+    
+  
+
+</div>
+{%endblock%}
