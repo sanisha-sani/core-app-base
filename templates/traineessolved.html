@@ -1,150 +1,123 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
-<style>
-    @media (max-width: 992px) {
-    
-    }
-</style>
-<div class="row ">
-    <div class="col-12 grid-margin">
-        <div class="card">
-            <div class="card-body">                    
-                 <h4 class="card-title">Order Status</h4> 
-                 <ul class="navbar-nav">
-                      
-                    <li class="nav-item  w-30">
-                       <form id="se" class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                         <input type="text" class="form-control" placeholder="Search">
-                       </form>
-                     </li>
-                   
-                   </ul>
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <!-- <th>
-                                     <div class="form-check form-check-muted m-0">
-                                        <label class="form-check-label">
-                       <input type="checkbox" class="form-check-input"> 
-                    </label>
-                                    </div> 
-                                </th> -->
-                                <th> Name </th>
-                                <th> Department </th>
-                                <th> Problem </th>
-                                <th> Replay </th>
-                                <th> Status </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <!-- <td>
-                                    <div class="form-check form-check-muted m-0">
-                                        <label class="form-check-label">
-                       <input type="checkbox" class="form-check-input">
-                    </label>
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-12 grid-margin">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row" style="margin-top: -16px">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <h4>TRAINEES</h4>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <form>
+                                <div class="input-group input-group-sm mb-3">
+                                    <input type="text" class="form-control text-white" placeholder="Search" />
+                                    <div class="input-group-append">
+                                        <span class="input-group-text bg-danger"><i class="fas fa-search text-light"
+                                                style="font-size: 16px"></i></span>
                                     </div>
-                                </td> -->
-                                <td>
-                                    <!-- <img src="assets/images/faces/face1.jpg" alt="image" /> -->
-                                    <span class="ps-2">Henry Klein</span>
-                                </td>
-                                <td> 02312 </td>
-                                <td> $14,500 </td>
-                                 <td> Dashboard </td>
-                                <!-- <td> Credit card </td>
-                                <td> 04 Dec 2019 </td> -->
-                                <td>
-                                    <div style="color: rgb(94, 194, 94);">Solved</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <!-- <td>
-                                    <div class="form-check form-check-muted m-0">
-                                        <label class="form-check-label">
-                       <input type="checkbox" class="form-check-input"> 
-                    </label>
-                                    </div>
-                                </td> -->
-                                <td>
-                                    <!-- <img src="assets/images/faces/face2.jpg" alt="image" /> -->
-                                    <span class="ps-2">Estella Bryan</span>
-                                </td>
-                                <td> 02312 </td>
-                                <td> $14,500 </td>
-                                <td> Website </td> 
-                                <!-- <td> Cash on delivered </td>
-                                <td> 04 Dec 2019 </td> -->
-                                <td>
-                                    <div style="color: rgb(94, 194, 94);">Solved</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <!-- <td>
-                                    <div class="form-check form-check-muted m-0">
-                                        <label class="form-check-label">
-                       <input type="checkbox" class="form-check-input"> 
-                    </label>
-                                    </div>
-                                </td> -->
-                                <td>
-                                    <!-- <img src="assets/images/faces/face5.jpg" alt="image" /> -->
-                                    <span class="ps-2">Lucy Abbott</span>
-                                </td>
-                                <td> 02312 </td>
-                                <td> $14,500 </td>
-                                 <td> App design </td> 
-                                <!-- <td> Credit card </td>
-                                <td> 04 Dec 2019 </td> -->
-                                <td>
-                                    <div style="color: rgb(94, 194, 94);">Solved</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <!-- <td>
-                                    <div class="form-check form-check-muted m-0">
-                                        <label class="form-check-label">
-                       <input type="checkbox" class="form-check-input"> 
-                    </label>
-                                    </div>
-                                </td> -->
-                                <td>
-                                    <!-- <img src="assets/images/faces/face3.jpg" alt="image" /> -->
-                                    <span class="ps-2">Peter Gill</span>
-                                </td>
-                                <td> 02312 </td>
-                                <td> $14,500 </td>
-                                 <td> Development </td> 
-                                <!-- <td> Online Payment </td>
-                                <td> 04 Dec 2019 </td> -->
-                                <td>
-                                    <div style="color: rgb(94, 194, 94);">Solved</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <!-- <td>
-                                    <div class="form-check form-check-muted m-0">
-                                        <label class="form-check-label">
-                       <input type="checkbox" class="form-check-input"> 
-                    </label>
-                                    </div>
-                                </td> -->
-                                <td>
-                                    <!-- <img src="assets/images/faces/face4.jpg" alt="image" /> -->
-                                    <span class="ps-2">Sallie Reyes</span>
-                                </td>
-                                <td> 02312 </td>
-                                <td> $14,500 </td>
-                                 <td> Website </td> 
-                                
-                                <td>
-                                    <div style="color: rgb(94, 194, 94);">Solved</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead style="background-color: black;">
+                                <tr>
+                                    <th> Name </th>
+                                    <th> Department </th>
+                                    <th> Problem </th>
+                                    <th> Reply </th>
+                                    <th> Status </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="ps-2">Henry Klein</span>
+                                    </td>
+                                    <td> Account </td>
+                                    <td> Sir,<br><br>
+                                        Due to severe net issue,<br><br> I am not able to attend the training<br><br>
+                                        session throughout in 3 hours </td>
+                                    <td> We are looking to gather<br><br> all our employees in office for work
+                                        <br><br>so that you all can use the company wifi.
+                                    </td>
+                                    <td>
+                                        <div class="badge" style="color: rgb(94, 194, 94);font-size: medium;">Solved
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="ps-2">Estella Bryan</span>
+                                    </td>
+                                    <td> Admin </td>
+                                    <td> Sir,<br><br>
+                                        Due to severe net issue,<br><br> I am not able to attend the training<br><br>
+                                        session throughout in 3 hours </td>
+                                    <td> We are looking to gather<br><br> all our employees in office for work
+                                        <br><br>so that you all can use the company wifi.
+                                    </td>
+                                    <td>
+                                        <div class="badge" style="color: rgb(94, 194, 94);font-size: medium;">Solved
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="ps-2">Lucy Abbott</span>
+                                    </td>
+                                    <td> HR </td>
+                                    <td> Sir,<br><br>
+                                        Due to severe net issue,<br><br> I am not able to attend the training<br><br>
+                                        session throughout in 3 hours </td>
+                                    <td> We are looking to gather<br><br> all our employees in office for work
+                                        <br><br>so that you all can use the company wifi.
+                                    </td>
+                                    <td>
+                                        <div class="badge" style="color: rgb(94, 194, 94);font-size: medium;">Solved
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="ps-2">Peter Gill</span>
+                                    </td>
+                                    <td> Development </td>
+                                    <td> Sir,<br><br>
+                                        Due to severe net issue,<br><br> I am not able to attend the training<br><br>
+                                        session throughout in 3 hours </td>
+                                    <td> We are looking to gather<br><br> all our employees in office for work
+                                        <br><br>so that you all can use the company wifi.
+                                    </td>
+                                    <td>
+                                        <div class="badge" style="color: rgb(94, 194, 94);font-size: medium;">Solved
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="ps-2">Sallie Reyes</span>
+                                    </td>
+                                    <td> Marketing </td>
+                                    <td> Sir,<br><br>
+                                        Due to severe net issue,<br><br> I am not able to attend the training<br><br>
+                                        session throughout in 3 hours </td>
+                                    <td> We are looking to gather<br><br> all our employees in office for work
+                                        <br><br>so that you all can use the company wifi.
+                                    </td>
+
+                                    <td>
+                                        <div class="badge" style="color: rgb(94, 194, 94);font-size: medium;">Solved
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

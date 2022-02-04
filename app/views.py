@@ -1,4 +1,3 @@
-from django.http import request
 from django.shortcuts import render
 
 # Create your views here.
@@ -11,14 +10,21 @@ def reportedissue(request):
 def reportissuetrainers(request):
     return render(request,'reportissuetrainers.html')
 
+def reportissuetrainees(request):
+    return render(request,'reportissuetrainees.html')
+
+def reportedissuesub(request):
+    return render(request,'reportedissuesub.html')
+
+def reportissue(request):
+    return render(request,'reportissue.html')
+
 def trainerunsolvedissue(request):
     return render(request,'trainerunsolvedissue.html')
 
 def trainersolvedissue(request):
     return render(request,'trainersolvedissue.html')
 
-def reportissuetrainees(request):
-    return render(request,'reportissuetrainees.html')
 
 def traineessolved(request):
     return render(request,'traineessolved.html')

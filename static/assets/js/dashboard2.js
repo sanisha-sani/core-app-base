@@ -61,13 +61,13 @@
         }
       });
     }
-    if ($("#transaction-history").length) {
+    if ($("#transaction-history1").length) {
       var areaData = {
         labels: ["Paypal", "Stripe", "Cash"],
         datasets: [{
           data: [55, 25, 20],
           backgroundColor: [
-            "#111111", "#00d25b", "#ffab00"
+            "#000000", "#FF0000", "#006400"
           ]
         }
         ]
@@ -102,7 +102,7 @@
           ctx.textBaseline = "middle";
           ctx.fillStyle = "#ffffff";
 
-          var text = "200",
+          var text = "100",
             textX = Math.round((width - ctx.measureText(text).width) / 2),
             textY = height / 2.4;
 
@@ -123,7 +123,7 @@
           ctx.save();
         }
       }
-      var transactionhistoryChartCanvas = $("#transaction-history").get(0).getContext("2d");
+      var transactionhistoryChartCanvas = $("#transaction-history1").get(0).getContext("2d");
       var transactionhistoryChart = new Chart(transactionhistoryChartCanvas, {
         type: 'doughnut',
         data: areaData,
