@@ -1,6 +1,7 @@
-{% extends 'index.html' %}
-{% load static %}
-{% block content %}
+{% extends 'index.html' %} {% load static %} {% block content %}
+
+<!-- Trainers Unsolved Issue Table -->
+
 <div class="content-wrapper">
     <div class="row">
         <div class="col-12 grid-margin">
@@ -15,7 +16,7 @@
                                 <div class="input-group input-group-sm mb-3">
                                     <input type="text" class="form-control text-white" placeholder="Search" />
                                     <div class="input-group-append">
-                                        <span class="input-group-text bg-danger"><i class="fas fa-search text-light"
+                                        <span class="input-group-text bg-primary"><i class="fas fa-search text-light"
                                                 style="font-size: 16px"></i></span>
                                     </div>
                                 </div>
@@ -23,8 +24,8 @@
                         </div>
                     </div>
                     <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead style="background-color: black;">
+                        <table class="table">
+                            <thead>
                                 <tr>
                                     <th> Name </th>
                                     <th> Department </th>
@@ -113,36 +114,40 @@
                         <!-- Modal -->
                         <div class="modal" id="myModal">
                             <div class="modal-dialog">
-                                <div class="modal-content">
+                                <div class="col-12 grid-margin stretch-card bg-dark text-light modal-content ">
 
                                     <!-- Modal Header -->
                                     <div class="modal-header">
                                         <h4 class="modal-title">Problem</h4>
-                                        <button type="button"
-                                            style="background-color: rgba(12, 12, 12, 0.473);color: white;"
-                                            class="close" data-dismiss="modal">&times;</button>
+                                        <button type="button" style="color: white;" class="close"
+                                            data-dismiss="modal">&times;</button>
                                     </div>
 
                                     <!-- Modal body -->
                                     <div class="modal-body">
-                                        <textarea class="col-12 grid-margin stretch-card bg-dark text-light"
+                                        <textarea class="col-12 grid-margin stretch-card  text-dark" style="background-color: rgba(255, 255, 255, 0.267);"
                                             rows="3"></textarea>
                                     </div>
 
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Send</button>
+                                        <button type="button" class="btn btn-outline-primary btn-icon-text" data-dismiss="modal"><i
+                                            class="mdi mdi-send text-info"
+                                            style="font-size:18px; "></i>Send</button>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                         <!-- modal end -->
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- end here -->
 
 {% endblock %}

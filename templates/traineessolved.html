@@ -1,6 +1,7 @@
-{% extends 'index.html' %}
-{% load static %}
-{% block content %}
+{% extends 'index.html' %} {% load static %} {% block content %}
+
+<!-- Trainees Solved Issue Table -->
+
 <div class="content-wrapper">
     <div class="row">
         <div class="col-12 grid-margin">
@@ -15,7 +16,7 @@
                                 <div class="input-group input-group-sm mb-3">
                                     <input type="text" class="form-control text-white" placeholder="Search" />
                                     <div class="input-group-append">
-                                        <span class="input-group-text bg-danger"><i class="fas fa-search text-light"
+                                        <span class="input-group-text bg-primary"><i class="fas fa-search text-light"
                                                 style="font-size: 16px"></i></span>
                                     </div>
                                 </div>
@@ -23,8 +24,8 @@
                         </div>
                     </div>
                     <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead style="background-color: black;">
+                        <table class="table">
+                            <thead>
                                 <tr>
                                     <th> Name </th>
                                     <th> Department </th>
@@ -123,5 +124,7 @@
         </div>
     </div>
 </div>
+
+<!-- end here -->
 
 {% endblock %}

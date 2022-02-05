@@ -1,6 +1,5 @@
-{% extends 'index.html' %}
-{% load static %}
-{% block content %}
+{% extends 'index.html' %} {% load static %} {% block content %}
+
 <div class="content-wrapper">
     <div class="row">
         <div class="col-12 grid-margin">
@@ -10,12 +9,13 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <h4>TRAINERS</h4>
                         </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12"><br></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <form>
                                 <div class="input-group input-group-sm mb-3">
                                     <input type="text" class="form-control text-white" placeholder="Search" />
                                     <div class="input-group-append">
-                                        <span class="input-group-text bg-danger"><i class="fas fa-search text-light"
+                                        <span class="input-group-text bg-primary"><i class="fas fa-search text-light"
                                                 style="font-size: 16px"></i></span>
                                     </div>
                                 </div>
@@ -24,8 +24,8 @@
                     </div>
 
                     <div class="table-responsive">
-                        <table class="table  table-bordered">
-                            <thead style="background-color: black;">
+                        <table class="table">
+                            <thead>
                                 <tr>
                                     <th>
                                         <h4>Name</h4>
@@ -47,7 +47,10 @@
                                     <td>Be sure to update the placeholder sections before posting.</td>
 
                                     <td>
-                                        <div class="badge badge-outline-success" style="width: 90px;">solved</div>
+                                        <div class="badge badge-outline-success" style="width: 95px;">
+                                            <i class="mdi mdi-playlist-check"></i>&nbsp;
+                                            Solved
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -57,7 +60,10 @@
                                     <td>Be sure to update the placeholder sections before posting.</td>
 
                                     <td>
-                                        <div class="badge badge-outline-danger" style="width: 90px;">Un-solved</div>
+                                        <div class="badge badge-outline-danger" style="width: 95px;">
+                                            <i class="mdi mdi-playlist-remove"></i>&nbsp;
+                                            Un-Solve
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -69,7 +75,10 @@
                                     <td>Be sure to update the placeholder sections before posting.</td>
 
                                     <td>
-                                        <div class="badge badge-outline-danger" style="width: 90px;">Un-solved</div>
+                                        <div class="badge badge-outline-danger" style="width: 95px;">
+                                            <i class="mdi mdi-playlist-remove"></i>&nbsp;
+                                            Un-Solve
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -81,7 +90,10 @@
                                     <td>Be sure to update the placeholder sections before posting.</td>
 
                                     <td>
-                                        <div class="badge badge-outline-success" style="width: 90px;">solved</div>
+                                        <div class="badge badge-outline-success" style="width: 95px;">
+                                            <i class="mdi mdi-playlist-check"></i>&nbsp;
+                                            Solved
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -94,7 +106,11 @@
 
 
                                     <td>
-                                        <div class="badge badge-outline-success" style="width: 90px;">solved</div>
+                                        <div class="badge badge-outline-success" style="width: 95px;">
+                                            <i class="mdi mdi-playlist-check "></i>&nbsp;
+
+                                            Solved
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -105,5 +121,8 @@
         </div>
     </div>
 </div>
+
+
+<!-- end here -->
 
 {% endblock %}

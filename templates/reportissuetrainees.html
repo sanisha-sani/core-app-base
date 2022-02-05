@@ -1,30 +1,33 @@
 {%extends 'index.html'%} {% load static %} {% block content %}
 
 <!-- Trainees unsolved and solved issue -->
+
 <div class="row" style="margin-left: 20px; margin-top: 20px; margin-right: 20px">
   <div class="col-md-6 grid-margin stretch-card">
     <div class="card pt-3">
-      <div class="card-body">
-        <a href="/app/traineesunsolved" style="text-decoration: none">
+      <a href="/app/traineesunsolved" style="text-decoration: none">
+        <div class="card-body">
           <h4 class="card-title text-center text-danger" style="font-size: 25px">
             Unsolved Issue
           </h4>
-        </a>
-        <canvas id="transaction-history" class="transaction-chart"></canvas>
-      </div>
+          <canvas id="transaction-history" class="transaction-chart"></canvas>
+        </div>
+      </a>
     </div>
   </div>
   <div class="col-md-6 grid-margin stretch-card">
     <div class="card pt-3">
-      <div class="card-body">
-        <a href="/app/traineessolved" style="text-decoration: none">
+      <a href="/app/traineessolved" style="text-decoration: none">
+        <div class="card-body">
           <h4 class="card-title text-center text-success" style="font-size: 25px">
             Solved issue</h4>
-        </a>
-        <canvas id="transaction-history1" class="transaction-chart"></canvas>
-      </div>
+          <canvas id="transaction-history1" class="transaction-chart"></canvas>
+        </div>
+      </a>
     </div>
   </div>
 </div>
+
 <!-- end here -->
+
 {% endblock %}
