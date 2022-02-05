@@ -19,11 +19,4 @@ urlpatterns = [
 # --- Trainers and Trainees section end ---
 
 
-# --- Jishnu : Report and Reported Issue section ---
-
-    re_path(r'^reportissue$', views.reportissue, name='reportissue'),
-    re_path(r'^reportedissuesub$', views.reportedissuesub, name='reportedissuesub'),
-
-# --- Report and Reported Issue section end ---
-
 ]

@@ -29,12 +29,3 @@ def traineesunsolved(request):
 
 #  --- Trainers and Trainees section end ---
 
-#  --- Jishnu : Report and Reported Issue section ---
-
-def reportissue(request):
-    return render(request,'reportissue.html')
-
-def reportedissuesub(request):
-    return render(request,'reportedissuesub.html')
-
-# --- Report and Reported Issue section end ---
